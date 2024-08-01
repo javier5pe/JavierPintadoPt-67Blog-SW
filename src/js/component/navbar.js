@@ -12,6 +12,14 @@ export const Navbar = () => {
 					<button className="btn btn-primary">Check the Context in action</button>
 				</Link>
 			</div>
+			<div className="dropdown">
+				<button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Favoritos
+				</button>
+				<ul className="dropdown-menu">
+					<li><a className="dropdown-item" href="#"><i className="fas fa-trash-alt"></i></a></li>
+				</ul>
+			</div>
 		</nav>
 	);
 };

@@ -19,6 +19,7 @@ const Planetas = () => {
                             <p className="card-text">Diametro: {item.diameter}</p>
                             <p className="card-text">Rotacion: {item.rotation_period}</p>
                             <a href="#" className="btn btn-primary">Más info</a>
+                            <button type="button" className="fas fa-heart"></button>
                         </div>
                     </div>
                 </>
