@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/characters.css";
+import "../../styles/Personajes.css";
 
-const Character = () => {
+const Personajes = () => {
 
     const {store , actions} = useContext(Context)
 
@@ -10,7 +10,7 @@ const Character = () => {
 
     return(
         <>
-            <h1>Characters</h1>
+            <h1 className=" d-flex ms-0">Personajes</h1>
             {store.personajes.map((item)=>(
                 <>
                      <div className="card" style={{ width: '18rem' }}>
@@ -28,4 +28,4 @@ const Character = () => {
     );
 };
 
-export default Character;
+export default Personajes;

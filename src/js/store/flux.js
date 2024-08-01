@@ -1,3 +1,5 @@
+import Vehiculos from "../views/Vehiculos";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -14,16 +16,45 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			],
 			personajes: [],
+			vehiculos: [],
+			planetas: [],
+			
 		},
 		actions: {
 
 			traerPersonajes: () => {
-				fetch ("https://swapi.dev/api/people")
-					.then((response)=> response.json())
-					.then((data)=> setStore({ personajes: data.results }) )
+				fetch ("https://swapi.tech/api/people")
+					.then((response)=> response.json()) // convierte en json
+					.then((data)=> setStore({ personajes: data.results }) ) //alamcena en personajes
 			},
 
+			traerVehiculos: () => {
+				fetch ("https://swapi.tech/api/vehicles")
+				.then((response)=> response.json())
+				.then((data)=> setStore({vehiculos: data.results}) )
+			},
 
+			traerPlanetas: () => {
+				fetch("https://swapi.tech/api/planets")
+				.then((response)=> response.json())
+				.then ((data)=> setStore({planetas: data.results}))
+			},
+
+			
+
+ 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
