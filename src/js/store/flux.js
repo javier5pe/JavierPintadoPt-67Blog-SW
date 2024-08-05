@@ -23,19 +23,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 
 			traerPersonajes: () => {
-				fetch ("https://swapi.tech/api/people")
+				fetch ("https://swapi.dev/api/people")
 					.then((response)=> response.json()) // convierte en json
 					.then((data)=> setStore({ personajes: data.results }) ) //alamcena en personajes
 			},
 
 			traerVehiculos: () => {
-				fetch ("https://swapi.tech/api/vehicles")
+				fetch ("https://swapi.dev/api/vehicles")
 				.then((response)=> response.json())
 				.then((data)=> setStore({vehiculos: data.results}) )
 			},
 
 			traerPlanetas: () => {
-				fetch("https://swapi.tech/api/planets")
+				fetch("https://swapi.dev/api/planets")
 				.then((response)=> response.json())
 				.then ((data)=> setStore({planetas: data.results}))
 			},
