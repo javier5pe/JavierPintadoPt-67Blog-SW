@@ -11,13 +11,20 @@ const DetallesPersonaje = () => {
     console.log(store.personajes)
 
     return (
-        <>
-           {store.personajes[params.personajeposicion].name}
-           <>hr</>
-           {store.personajes[params.personajeposicion].gender}
-           <>hr</>
-           {store.personajes[params.personajeposicion].height}
-        </>
+        <div className="card carta " style={{ width: '18rem' }}>
+                               
+            <div className="card-body ">
+           
+                <p> {store.personajes[params.personajeposicion].name}   </p>
+                
+                
+                
+                
+                    
+            </div>
+                            
+        </div>
+
     )
 }
 

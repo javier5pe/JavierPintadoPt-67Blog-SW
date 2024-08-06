@@ -1,12 +1,26 @@
-.card {
-  
+.cardpersonajes {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 1rem;
+    
+    width: 300%;
     
 }
+
+
 
 .corazon{
     color: red;
 }
 
-.botoninfo{
-  
+.carta{
+    margin-right: 1.5rem;
+    height: 15rem;
+    width: 30rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
+
