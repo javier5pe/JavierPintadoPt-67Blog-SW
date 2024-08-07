@@ -18,9 +18,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 			personajes: [],
 			vehiculos: [],
 			planetas: [],
+			favoritos: [],
 			
 		},
 		actions: {
+
+			addFavoritos: (nombreFav) => {
+				const store = getStore();
+				if (store.favoritos.includes(nombreFav)){
+					setStore({favoritos:store.favoritos.filter((repetido)=> repetido != nombreFav)});
+				} else {
+					setStore({favoritos:[...store.favoritos,nombreFav]});
+				}
+			},
 
 			traerPersonajes: () => {
 				fetch ("https://swapi.dev/api/people")

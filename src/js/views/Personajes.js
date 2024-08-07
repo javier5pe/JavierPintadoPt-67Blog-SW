@@ -9,7 +9,7 @@ const Personajes = () => {
 
     const {store , actions} = useContext(Context)
 
-    console.log(store.personajes);
+    
 
     return(
         <>
@@ -30,7 +30,7 @@ const Personajes = () => {
                                             <butoon className=" botoninfo btn btn-outline-primary">Más info</butoon>
                                         </Link>
                                         
-                                        <button className=" corazon m-0 fas fa-heart"></button>
+                                        <button onClick={()=>actions.addFavoritos(item.name)} className=" corazon m-0 fas fa-heart"></button>
                                 </div>
                             
                             </div>
