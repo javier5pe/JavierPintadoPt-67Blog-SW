@@ -1,0 +1,33 @@
+.cardppv {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 1rem;
+    
+    width: 300%;
+    
+}
+
+.botonInfo{
+    background-color: blue;
+    
+    margin-left: 0%;
+
+}
+
+
+
+.corazon{
+    color: yellow;
+}
+
+.carta{
+    margin-right: 1.5rem;
+    height: 15rem;
+    width: 30rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import "../../styles/Personajes.css";
+import "../../styles/home.css";
 import { Link } from "react-router-dom";
 
 
@@ -15,7 +15,7 @@ const Personajes = () => {
         <>
             <h1 className=" text-danger d-flex ms-0 mb-2">Personajes</h1>
 
-                <div className="cardpersonajes">
+                <div className="cardppv">
                     
                     {store.personajes.map((item, index)=>(
                         <>
@@ -27,10 +27,11 @@ const Personajes = () => {
                                     <p className="card-text">Color de piel: {item.skin_color}</p>
                                     
                                         <Link to={"/pd/" + index}>
-                                            <butoon className=" botoninfo btn btn-outline-primary">Más info</butoon>
+                                            <butoon className=" botonInfo btn btn-outline-primary">Más info</butoon>
                                         </Link>
                                         
                                         <button onClick={()=>actions.addFavoritos(item.name)} className=" corazon m-0 fas fa-heart"></button>
+                                        
                                 </div>
                             
                             </div>
