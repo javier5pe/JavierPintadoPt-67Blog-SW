@@ -27,7 +27,7 @@ const Planetas = () => {
                                 <p className="card-text">Rotacion: {item.rotation_period}</p>
                                 
                                 <Link to={"/planetasinfo/"+ index}>
-                                    <butoon className=" botonInfo btn btn-outline-primary">Más info</butoon>
+                                    <butoon className=" botonInfo btn btn-outline-primary me-5">Más info</butoon>
                                 </Link>
                                 
                                 <button onClick={()=>actions.addFavoritos(item.name)} className=" corazon m-0 fas fa-heart"></button>

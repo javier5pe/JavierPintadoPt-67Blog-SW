@@ -27,10 +27,10 @@ const Vehiculos = () => {
                             <p className="card-text">Pasajeros: {item.passengers}</p>
                             
                             <Link to={"/vehiculosinfo/" + index}>
-                                <butoon className=" botonInfo btn btn-outline-primary">Más info</butoon>
+                                <butoon className=" botonInfo btn btn-outline-primary me-5">Más info</butoon>
                             </Link>
                             
-                            <button onClick={()=>actions.addFavoritos(item.name)} className=" corazon m-0 fas fa-heart"></button>
+                            <button onClick={()=>actions.addFavoritos(item.name)} className=" corazon  fas fa-heart"></button>
                         </div>
                     </div>
                     

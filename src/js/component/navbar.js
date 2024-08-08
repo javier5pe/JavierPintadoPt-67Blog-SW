@@ -4,7 +4,9 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
 
-	const {store , actions} = useContext(Context)
+	const {store , actions} = useContext(Context);
+
+	console.log(store.favoritos);
 	
 	
 	
@@ -24,13 +26,13 @@ export const Navbar = () => {
 
 			<div className="dropdown">
 				<button className=" m-1 me-5 btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Favoritos
+					Favoritos {store.favoritos.length}
 				</button>
 					<ul className="me-3 dropdown-menu">
 						{store.favoritos.map((item, index) => (	
 							<li key={index}>
 								<a className="dropdown-item" href="#">
-									{item.name}	
+									{item}	
 									<i className="fas fa-trash-alt"></i>
 								</a>
 							</li>

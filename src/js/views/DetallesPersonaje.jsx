@@ -14,13 +14,11 @@ const DetallesPersonaje = () => {
        <div className="card carta " style={{ width: '18rem' }}>
                                
             <div className="card-body ">
-                <p> {store.personajes[params.personajeposicion].name}         </p>
-                <p> {store.personajes[params.personajeposicion].height}       </p>
-                <p> {store.personajes[params.personajeposicion].mass}         </p>
-                <p> {store.personajes[params.personajeposicion].hair_color}   </p>
-                <p> {store.personajes[params.personajeposicion].skin_color}   </p>
-                <p> {store.personajes[params.personajeposicion].birth_year}   </p>
-                <p> {store.personajes[params.personajeposicion].gender}       </p>
+                <p> Nombre: {store.personajes[params.personajeposicion].name}                </p>
+                <p> Altra: {store.personajes[params.personajeposicion].height}               </p>
+                <p> Peso: {store.personajes[params.personajeposicion].mass}                  </p>
+                <p> Color de Pelo: {store.personajes[params.personajeposicion].hair_color}   </p>
+                <p> Color de piel: {store.personajes[params.personajeposicion].skin_color}   </p>
             </div>
                             
         </div>
